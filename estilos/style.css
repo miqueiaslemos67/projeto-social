@@ -44,3 +44,23 @@ iframe#tela {
     height: 471px;
 }
 
+section#redes-socials {
+  text-align: right;
+}
+
+/* config. dos botões lateterais 01 */
+section#redes-socials  img {
+  width: 70px;
+  margin: 10px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.637);
+  box-sizing: border-box;
+}
+
+/* config. dos botões laterais (pseudo-class) */
+section#redes-socials img:hover {
+  border: 2px solid white;
+  transform: translate(-3px, -3px);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.555);
+  transition: transform .1s, border 1s;
+}
