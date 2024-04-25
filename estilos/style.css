@@ -1,66 +1,67 @@
 @charset "UTF-08";
 
 * {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-html,
-body {
-  height: 100vh;
-  width: 100vw;
-  background-color: black;
-}
-
-/* essas config. da imagem de fundo em madeira, faz com que a imagem nao repita, fique no topo e centro da tela. */
-body {
-    background: url('../imagens/fundo-madeira.jpg') no-repeat top center;
-    background-size: cover; /* cobre a tela inteira/imagem do fundo*/
-    background-attachment: fixed; /*fixa a imagem evetando rolagem*/
-}
-
-main {
-  position: relative;
-  height: 100vh;
-}
-
-section#telefone {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /*posiciona o quadrado no meio */
-
-  height: 627px;
-  width: 311px;
-  background: url('../imagens/frame-iphone.png') no-repeat;
-}
-
-iframe#tela {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  html,
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+  }
+  
+  /* essas config. da imagem de fundo em madeira, faz com que a imagem nao repita, fique no topo e centro da tela. */
+  body {
+      background: url('../imagens/img-de-fundo.jpg') no-repeat top center;
+      background-size: cover; /* cobre a tela inteira/imagem do fundo*/
+      background-attachment: fixed; /*fixa a imagem evetando rolagem*/
+  }
+  
+  main {
     position: relative;
-    top: 80px;
-    left: 22px;
-    width: 279px;
-    height: 471px;
-}
-
-section#redes-socials {
-  text-align: right;
-}
-
-/* config. dos botões lateterais 01 */
-section#redes-socials  img {
-  width: 70px;
-  margin: 10px;
-  border-radius: 50%;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.637);
-  box-sizing: border-box;
-}
-
-/* config. dos botões laterais (pseudo-class) */
-section#redes-socials img:hover {
-  border: 2px solid white;
-  transform: translate(-3px, -3px);
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.555);
-  transition: transform .1s, border 1s;
-}
+    height: 100vh;
+  }
+  
+  section#telefone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*posiciona o quadrado no meio */
+  
+    height: 627px;
+    width: 311px;
+    background: url('../imagens/frame-iphone.png') no-repeat;
+  }
+  
+  /* config. da img carregada na tela do iphone */
+  iframe#tela {
+      position: relative;
+      top: 80px;
+      left: 22px;
+      width: 267px;
+      height: 471px;
+  }
+  
+  section#redes-socials {
+    text-align: right;
+  }
+  
+  /* config. dos botões laterais 01 */
+  section#redes-socials  img {
+    width: 70px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.637);
+    box-sizing: border-box;
+  }
+  
+  /* config. dos botões laterais (pseudo-class) */
+  section#redes-socials img:hover {
+    border: 2px solid white;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.555);
+    transition: transform .1s, border 1s;
+  }
